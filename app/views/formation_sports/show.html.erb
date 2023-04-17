@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @formation_sport %>
+
+<div>
+  <%= link_to "Edit this formation sport", edit_formation_sport_path(@formation_sport) %> |
+  <%= link_to "Back to formation sports", formation_sports_path %>
+
+  <%= button_to "Destroy this formation sport", @formation_sport, method: :delete %>
+</div>

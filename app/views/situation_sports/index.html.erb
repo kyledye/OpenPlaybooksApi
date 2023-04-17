@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Situation sports</h1>
+
+<div id="situation_sports">
+  <% @situation_sports.each do |situation_sport| %>
+    <%= render situation_sport %>
+    <p>
+      <%= link_to "Show this situation sport", situation_sport %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New situation sport", new_situation_sport_path %>

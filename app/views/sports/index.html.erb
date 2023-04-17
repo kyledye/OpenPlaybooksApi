@@ -1,0 +1,29 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Sports</h1>
+
+<%= link_to "New sport", new_sport_path, class: 'btn btn-primary' %>
+
+<table id="sports" class="table table-condensed table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Slug</th>
+      <th>Description</th>
+      <th>Active</th>
+      <th colspan="2">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @sports.each do |sport| %>
+    <tr>
+      <td><%= sport.name %></td>
+      <td><%= sport.slug %></td>
+      <td><%= sport.description %></td>
+      <td><%= sport.active %></td>
+      <td><%= link_to  'Edit', sport_path(sport) %></td>
+      <td><%= button_to 'Destroy', sport_path(sport), method: :delete %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

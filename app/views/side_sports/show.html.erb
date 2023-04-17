@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @side_sport %>
+
+<div>
+  <%= link_to "Edit this side sport", edit_side_sport_path(@side_sport) %> |
+  <%= link_to "Back to side sports", side_sports_path %>
+
+  <%= button_to "Destroy this side sport", @side_sport, method: :delete %>
+</div>

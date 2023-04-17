@@ -9,6 +9,7 @@ gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 
 gem 'bootsnap', require: false
 gem 'devise'
+gem 'friendly_id', '~> 5.4.0'
 gem 'image_processing', '~> 1.2'
 gem 'importmap-rails'
 gem 'jbuilder'
@@ -27,6 +28,7 @@ group :development, :test do
   gem 'brakeman'
   gem 'bullet'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails'
   gem 'faker'
   gem 'rspec-rails', '~> 6.0.0'
 end
